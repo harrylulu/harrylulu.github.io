@@ -5,3 +5,17 @@
 <br> evaluation: cross-entropy on the output token distribution and the completion</br>
 <br> single-task fine-tuning: 500-1000 examples would be enough. Cons: catastrophic forgetting. </br>
 <br> multi-task fine-tuning: 50-100k examples. </br>
+
+<br>PEFT - 30%-50% parameters </br>
+<br> method: </br>
+<br> selective </br> 
+<br> reparameterizem model weights using a low-rank representation/LoRA </br> 
+<br> add trainable layers or parameters to model - Adapters (add new trainable layers to the architecture of the model, typically inside the encoder or decoder components after the attention or feed-forward layers) /Soft Prompts (keep the model architecture fixed and frozen, and focus on manipulating the input to achieve better performance. This can be done by adding trainable parameters to the prompt embeddings or keeping the input fixed and retraining the embedding weights) </br>
+
+
+<br> LoRA </br>
+<br> original weight = d x k </br>
+<br> LoRA = r x k and d x r </br>
+<br> final weight = original weight + LoRA = d x k + d x r X r x k </br>
+
+
