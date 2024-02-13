@@ -1,0 +1,9 @@
+<br> LLM Chanllenges: out-of-date knowledge, reasoning/math problem, tendency to generate response on things they don't know /hallucination </br>
+
+<br> Orchestration/Langchain: This layer can enable some powerful technologies that augment and enhance the performance of the LLM at runtime. By providing access to external data sources or connecting to existing APIs of other applications. </br>
+
+<br> RAG/framework: instead of retraining the model on new model, give model access to additional external data at inference time. Retriever: query dencoder + external information sources -> combines the new text (in vector store) w/ the original prompt -> pass the expanded prompt to LLM and generate the completion. Considerations: data must fit inside context window, external data must be available as embedding vectors (get from LLM) at inference time for LLM to consume </br>
+
+<br> reasoning and planning </br>
+<br> external application: LLM trigger API call. LLM generates completions including plan actions, format outputs, validate actions. Structuring the prompt in correct way make huge difference. </br>
+<br> multi-step math problems: CoT - prompt the model to think more like a person </br>
