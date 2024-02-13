@@ -1,0 +1,7 @@
+<br> parameter efficient fine-tuning: freeze the model parameter or add task-specific adaptive layer on top of that for the sake of a smaller memory footprint. Solves catastrophic forgetting problem.</br>
+<br> LoRA: use low rank matrices as opposed to full fine-tuning </br>
+<br> pretraining is selfsupervised learning on vast textual data, while fine tuning is supervised learning on set of labeled examples of prompt completion pairs</br>
+<br> instruction fine-tuning: train to respond to a specific instruction. The prompt completion examples allow the model to learn to generate responses that follow the given instructions. Prepare instruction dataset. Full fine-tuning.</br>
+<br> evaluation: cross-entropy on the output token distribution and the completion</br>
+<br> single-task fine-tuning: 500-1000 examples would be enough. Cons: catastrophic forgetting. </br>
+<br> multi-task fine-tuning: 50-100k examples. </br>
