@@ -11,6 +11,9 @@
 <br> Ageent RL policy = LLM, Environment = LLM context, Action = completion token, rewards = how the completions aligns w/ human knowledge. e.g., reward = 0/1. </br>
 <br> RLHF is expensive and time-consuming, alternatives is to have an additional model / reward model that classifies the outputs of LLM and evaluate the alignment w/ human preference. Train the reward model w/ human labels using supervised learning, then use the reward model to assess the output of LLM.</br>
 <br> Human: assess the LLM completion, mulitple labelers w/ consensus. </br>
+<br> Reward model: convert into pairwise training data? why not point-wise? also a language model w/ supervised learning </br>
+<br> RL aoglrithm to iteratively update the LLM model weights based on reward model. Algorithm: PPO. </br>
+
 
 <br> Reasoning engine </br>
 
