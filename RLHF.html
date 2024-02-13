@@ -1,0 +1,17 @@
+<br> RLHF: fine tune LLM w/ human feedback data </br>
+
+<br> e.g., reduce harmful, aggressive, dangeours, dishonest and toxic content learnt from internet data. Responsible AI </br>
+
+<br> e.g., train the model to give caveats that acknowledge their limitations and to avoid toxic language and topics. </br>
+
+<br> e.g., personalization of LLM </br>
+
+<br> RL </br>
+<br> an agent learns to make decisions related to a specific goal by taking actions in an environment, with the objective of maximizing some notion of a cumulative reward. </br>
+<br> Ageent RL policy = LLM, Environment = LLM context, Action = completion token, rewards = how the completions aligns w/ human knowledge. e.g., reward = 0/1. </br>
+<br> RLHF is expensive and time-consuming, alternatives is to have an additional model / reward model that classifies the outputs of LLM and evaluate the alignment w/ human preference. Train the reward model w/ human labels using supervised learning, then use the reward model to assess the output of LLM.</br>
+<br> Human: assess the LLM completion, mulitple labelers w/ consensus. </br>
+
+<br> Reasoning engine </br>
+
+<br> RAG to incoperate external information to LLM</br>
