@@ -2,6 +2,7 @@
 
 # [Coursera](https://www.coursera.org/learn/generative-ai-with-llms)
 
+[Papers](papers.md)
 # Transformer
 Bert: encoder only model  
 Bard: encoder-decoder model  
